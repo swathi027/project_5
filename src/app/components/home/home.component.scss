@@ -194,7 +194,7 @@
           color: $black;
           padding: 11px 22px;
           border-radius: 5px;
-          margin: 5px 0px;
+          margin: 5px 8px;
         }
 
         .btn-class2::before {
@@ -455,20 +455,6 @@
 
 }
 
-@media (max-width:500px) {
-  .two-one{
-    display: initial;
-    
-  }
-}
-
-@media (max-width:500px) and (min-width:680px) {}
-
-@media (max-width:780px) and (min-width:680px) {}
-
-@media (max-width:991px) and (min-width:780px) {}
-
-@media (max-width:1024px) and (min-width:991px) {}
 
 // popup section
 .popup {
@@ -505,6 +491,161 @@
       color: $secondry;
       font-size: 40px;
       text-align: center;
+    }
+  }
+}
+
+
+@media (max-width:500px) {
+  .sec-top{
+    margin-top: 33px !important;
+  }
+  .two-main {
+    display: initial !important;
+    .content1 {
+      margin-left: 10px;
+      .ico{
+        margin-top: 2px !important;
+      }
+      h6 {
+        font-size: 26px !important;
+        text-align: center !important;
+      }
+    }
+
+    .content2 {
+      margin-left: 10px;
+
+    }
+
+    .content3 {
+      i {
+        margin-left: 12px;
+      }
+
+    }
+
+    .content4 {
+     margin-left: 10px;
+    }
+
+    .content5 {
+      margin-left: 10px;
+      display: flex !important;
+      .btn-class3{
+        margin-left: 10px !important;
+      }
+    }
+
+    .para {
+      p {
+        margin-left: 10px;
+        margin-top: 60px !important ;
+        font-size: 12px;
+      }
+    }
+  }
+
+}
+
+@media (max-width:680px) and (min-width:501px) {
+  .sec-top{
+    margin-top: 10px !important;
+  }
+  .two-main{
+    display: initial !important;
+    .card{
+      width: 200px !important;
+      justify-content: center;
+    }
+    .content1{
+      margin-left: 10px;
+    }
+    .content2{
+      margin-left: 10px;
+    }
+    .content3{
+      i{
+        margin-left: 15px;
+      }
+    }
+    .content4{
+      .btn-class{
+        margin-left: 10px;
+      }
+    }
+    .content5{
+      margin-left: 10px;
+      .btn-class2{
+        margin-left: 10px !important;
+      }
+      .btn-class3{
+        margin-left: 10px !important;
+      }
+      .para{
+        p{
+          margin-top:50px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:780px) and (min-width:680px) {
+  .sec-top{
+    margin-top: 10px;
+  }
+  .two-main{
+    .card{
+      width: 100px !important;
+    }
+    .content5{
+      .btn-class3{
+        margin-left: 10px !important;
+      }
+      .para{
+        p{
+          margin-top:50px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:992px) and (min-width:780px) {
+  .sec-top{
+    margin-top:10px;
+  }
+  .two-main{
+    .card{
+      width: 90px !important;
+    }
+    .content5{
+      .btn-class3{
+        margin-left: 10px !important;
+      }
+      .para{
+        p{
+          margin-top:50px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1024px) and (min-width:991px) {
+  .card{
+    width: 150px !important;
+  }
+  .content5{
+    .btn-class2{
+      margin-left: 10px !important;
+    }
+    .para{
+      p{
+        margin-top: 50px !important;
+      }
     }
   }
 }
