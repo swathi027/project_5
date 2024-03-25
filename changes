@@ -1,0 +1,25 @@
+
+ <!-- <div class="col-lg-12">
+            <h4>Top Gold Jewellery Showrooms in Hyderabad</h4>
+            <div class="slct-options d-flex">
+              <select class="form-select">
+                <option selected>Sort By</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button type="button" class="btn-class"><i class="fa-solid fa-star"></i>Top Rated</button>
+              <button type="button" class="btn-class"><i class="fa-solid fa-bolt"></i>Quick Response</button>
+              <button type="button" class="btn-class">Gold</button>
+              <button type="button" class="btn-class">Jd Verified</button>
+              <button type="button" class="btn-class"><i class="fa-solid fa-percent"></i>Deals</button>
+              <button type="button" class="btn-class"><i class="fa-solid fa-crown"></i>Jd trust</button>
+              <select class="form-select">
+                <option selected>Ratings</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button class="btn-class">All Filters</button>
+            </div>
+          </div> -->

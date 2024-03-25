@@ -1,0 +1,87 @@
+<section class="contact-us">
+  <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"
+    style="fill:#fff; width: 100%; height: 100px; transform: rotate(180deg); position: absolute; top: 95%; left: 0; z-index: 1;"
+    class="_web-inspector-hide-shortcut_  svg-img">
+    <path
+      d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z">
+    </path>
+  </svg>
+  <div style="position: relative; z-index: 0;">
+    <img src="https://goldsikka.com/images/chains.png" class="sec-img" alt="..." width="100%">
+  </div>
+
+  <div class="two-one">
+    <button type="button" class="btn"> contact-us</button>
+  </div>
+</section>
+
+
+<section class="form-sec">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 first-sec">
+      <img src="https://goldsikka.com/images/goldsikka-to-goldbox-web-banner.jpg" alt="" width="100%">
+    </div>
+    <div class="col-md-6 sec-sec">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="name">
+          <input type="name" class="form-control" id="exampleInputname" aria-describedby="name"
+            formControlName="FirstName" placeholder="Enter you frist name">
+        </div>
+        <div *ngIf="registerForm.get('FirstName')?.invalid && registerForm.get('FirstName')?.touched">
+          <div *ngIf="registerForm.get('FirstName')?.errors?.['required']" class="text-danger">FullName is required.
+          </div>
+        </div>
+        <div class="names">
+          <input type="email" id="Email-id" formControlName="email" class="form-control" placeholder="E-mail">
+        </div>
+        <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+          <div *ngIf="registerForm.get('email')?.errors?.['required']" class="text-danger">Email is required.</div>
+          <div *ngIf="registerForm.get('email')?.errors?.['email']" class="text-danger">Invalid email format.</div>
+        </div>
+        <div class="name">
+          <input type="number" class="form-control" id="exampleInputvalue" placeholder="phoneNumber"
+            formControlName="number">
+        </div>
+        <div *ngIf="registerForm.get('number')?.invalid && registerForm.get('number')?.touched">
+          <div *ngIf="registerForm.get('number')?.errors?.['required']" class="text-danger">10 digits number is
+            required.</div>
+        </div>
+        <div class="name">
+          <input type="password" id="password" class="form-control" formControlName="password" placeholder="password">
+        </div>
+        <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+          <div *ngIf="registerForm.get('password')?.errors?.['required']" class="text-danger">Password is required.
+          </div>
+          <!-- <div *ngIf="registerForm.get('password.length > 5')"></div> -->
+        </div>
+        <div class="name">
+          <input type="confirm password" id="confirmpassword" formControlName="confirmpassword" class="form-control"
+            placeholder="confirm password">
+        </div>
+        <div *ngIf="registerForm.get('confirmpassword')?.invalid && registerForm.get('confirmpassword')?.touched">
+          <div *ngIf="registerForm.get('confirmpassword')?.errors?.['required']" class="text-danger">confirmpassword
+            is
+            required.</div>
+        </div>
+        <h5>{{formdata|json}}</h5>
+        <div>
+          <div class="texttts d-flex">
+            <p class="me-2"> I have read and agree to the
+              <strong>Privacy Policy</strong>
+            </p>
+            <div class="me-4"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></div>
+            <div class="bttt">
+              <button type="submit" class="btn" [disabled]="registerForm.invalid">Login</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="map-full">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3186747844447!2d78.46317437462821!3d17.44445500115972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9126c3f6434d%3A0xadf7dea0edf1e45e!2sX-YUG%20TECHNOLOGIES%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1711302716176!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
